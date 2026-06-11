@@ -12,7 +12,7 @@ class EstudianteAdmin(admin.ModelAdmin):
     # se deja de usar la representación (str)
     # de la clase
     list_display = ('nombre', 'apellido', 'cedula', 'edad',
-        'tipo_estudiante', 'obtener_anio_nacimiento')
+        'tipo_estudiante', 'obtener_anio_nacimiento')# No se utiliza parentesis
     search_fields = ('nombre', 'cedula', 'apellido')
 
 # admin.site.register se lo altera
